@@ -56,3 +56,30 @@ try:
 
     echo('\nModel:')
     echo(model_settings(model, temperature, max_tokens, stop))
+
+    echo('\nCommands:')
+    echo('PrompterGenerate   ' + vim.eval('g:prompter_generate_keystroke'))
+    echo('PrompterInfo       ' + vim.eval('g:prompter_info_keystroke'))
+    echo('PrompterSetup      ' + vim.eval('g:prompter_setup_keystroke'))
+except:
+    error('prompter.vim setup not done! Run in command line :PrompterSetup')
+EOF
+endfunction
+
+
+function! Setup()
+python3 << EOF
+import vim
+import sys
+sys.path.append(vim.eval('s:python_path'))
+from vim_utils import info, error, progress
+
+import llm
+# from llm import MODEL, TEMPERATURE, MAX_TOKENS, STOP
+
+progress(f'configuring...')
+
+# set default key mappings
+vim.command("execute 'map ' . g:prompter_generate_keystroke . ' :PrompterGenerate<CR>'")
+vim.command("execute 'map ' . g:prompter_info_keystroke . ' :PrompterInfo<CR>'")
+vim.command("execute 'map ' . g:prompter_setup_keystroke . ' :PrompterSetup<CR>'")
