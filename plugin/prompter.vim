@@ -26,3 +26,33 @@ let g:prompter_completion_ctermfg = 0
 "    └── my_plugin/
 "        └── start/
 "            └── my_plugin/
+"                ├── plugin/
+"                │   ├── prompter.vim
+"                │   └── ...
+"                └── python/
+"                    ├── llm.py
+"                    ├── utils.py
+"                    └── ...
+"
+let s:python_path = expand('<sfile>:p:h:h') . '/python'
+
+function! Info()
+python3 << EOF
+import vim
+import sys
+sys.path.append(vim.eval('s:python_path'))
+
+from vim_utils import echo, error
+from utils import model_settings, help
+
+echo(help())
+# print(vim.eval('s:python_path'))
+
+try:
+    model = vim.eval('g:model')
+    temperature = float(vim.eval('g:temperature'))
+    max_tokens = int(vim.eval('g:max_tokens'))
+    stop = vim.eval('g:stop')
+
+    echo('\nModel:')
+    echo(model_settings(model, temperature, max_tokens, stop))
