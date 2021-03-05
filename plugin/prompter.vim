@@ -108,3 +108,31 @@ from vim_utils import info, progress, error
 from llm import generate
 
 # take the current buffer as prompt
+# the buffer is a list of separated strings
+prompt = '\n'.join(vim.current.buffer[:])
+
+# removes both the leading and trailing newlines along with any extra spaces.
+prompt = prompt.strip()
+
+try:
+  model = vim.eval('g:model')
+  temperature = float(vim.eval('g:temperature'))
+  max_tokens = int(vim.eval('g:max_tokens'))
+  stop = vim.eval('g:stop')
+  settings_available = True
+except:
+    error('Run in command line :PrompterSetup')
+    settings_available = False
+
+# Awful conditional management, but caused by some vimscript/python limits (impossible to return/exit
+if settings_available:
+    #  show model settings as a work in progress message. 
+    #  visible only if latency is greater than hundreds of millisecond 
+    setting = model_settings(model, temperature, max_tokens, stop)
+    progress(f'generating using: {setting}')
+    # progress(f'generating...')
+
+    completion_text, completion_statistics = generate(prompt, model, temperature, max_tokens, stop)
+
+    # completion tokens are great than max_tokens 
+    if 'length' in completion_statistics:
