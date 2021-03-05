@@ -83,3 +83,28 @@ progress(f'configuring...')
 vim.command("execute 'map ' . g:prompter_generate_keystroke . ' :PrompterGenerate<CR>'")
 vim.command("execute 'map ' . g:prompter_info_keystroke . ' :PrompterInfo<CR>'")
 vim.command("execute 'map ' . g:prompter_setup_keystroke . ' :PrompterSetup<CR>'")
+
+vim.command(f'let g:model = "{llm.MODEL}"')
+vim.command(f'let g:temperature = "{llm.TEMPERATURE}"')
+vim.command(f'let g:max_tokens = "{llm.MAX_TOKENS}"')
+vim.command(f'let g:stop = "{llm.STOP}"')
+
+info_text = f'Model: {llm.MODEL} Temperature: {llm.TEMPERATURE} Max_tokens: {llm.MAX_TOKENS}'
+if llm.STOP:
+    info_text += f' Stop: {llm.STOP}'
+
+info(info_text)
+EOF
+endfunction
+
+
+function! Generate()
+python3 << EOF
+import vim
+import sys
+sys.path.append(vim.eval('s:python_path'))
+from utils import model_settings
+from vim_utils import info, progress, error
+from llm import generate
+
+# take the current buffer as prompt
