@@ -177,3 +177,6 @@ endfunction
 command! PrompterSetup call Setup()
 command! PrompterInfo call Info()
 command! PrompterGenerate call Generate()
+
+" TODO do not print process text :(
+" command! PrompterRegenerate :execute 'normal u' | PrompterGenerate
