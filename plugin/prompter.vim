@@ -157,3 +157,23 @@ if settings_available:
     ctermbg = vim.eval('g:prompter_completion_ctermbg')
     ctermfg = vim.eval('g:prompter_completion_ctermfg')
     vim.command(f'highlight PrompterGenerateGroup ctermbg={ctermbg} ctermfg={ctermfg}')
+
+    # highlighy just the last completion
+    #vim.command("execute 'match PrompterGenerateGroup /' . substitute(g:last_completion_text, \"[\\n\\<C-m>]\", '\\\\n', 'g') . '/' ")
+
+    # highlight all completions
+    text_to_highlight = "substitute(g:last_completion_text, \"[\\n\\<C-m>]\", '\\\\n', 'g')"
+    vim.command(f'let mid = matchadd(\"PrompterGenerateGroup\", {text_to_highlight})')
+
+    # show the end of completion (go to the end of the buffer)
+    vim.command('$')
+EOF
+endfunction
+
+
+"
+" PLUGIN COMMANDS
+"
+command! PrompterSetup call Setup()
+command! PrompterInfo call Info()
+command! PrompterGenerate call Generate()
