@@ -136,3 +136,24 @@ if settings_available:
 
     # completion tokens are great than max_tokens 
     if 'length' in completion_statistics:
+        error(completion_statistics)
+    else:
+        info(completion_statistics)
+
+    # vim buffer requires a list of lines (no newlines)
+    # completion_text = completion_text.strip().split('\n')
+    # append the LLM completion to the current buffer, without an initial newline
+    # vim.current.buffer.append(completion_text)
+
+    # Replace the buffer content with the concatenated text without an initial newline
+    current_buffer = '\n'.join(vim.current.buffer[:]) + completion_text
+    vim.current.buffer[:] = current_buffer.split('\n')
+
+    # highlight completion 
+    vim.command('let g:last_completion_text = "' + completion_text.replace('"', '\\"') + '"')
+
+    # highlight completion (multiline) text
+    # https://vi.stackexchange.com/questions/43001/how-can-i-match-a-regexp-containing-newlines/43002#43002
+    ctermbg = vim.eval('g:prompter_completion_ctermbg')
+    ctermfg = vim.eval('g:prompter_completion_ctermfg')
+    vim.command(f'highlight PrompterGenerateGroup ctermbg={ctermbg} ctermfg={ctermfg}')
