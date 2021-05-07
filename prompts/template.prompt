@@ -3,3 +3,6 @@ TASK
 
 DATA
 {some_yaml}
+
+DIALOG
+{dialog_history}
