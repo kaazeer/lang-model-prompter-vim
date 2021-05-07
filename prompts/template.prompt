@@ -1,2 +1,5 @@
 TASK
 {some_task_description}
+
+DATA
+{some_yaml}
