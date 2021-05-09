@@ -48,3 +48,15 @@ def stop_timer(start_time):
     seconds = round(milliseconds / 1000, 1)
 
     return f"{milliseconds }ms ({seconds}s)", milliseconds
+
+
+if __name__ == "__main__":
+
+    start = start_timer()
+
+    time.sleep(2)
+
+    # print(stop_timer_msecs(start))
+    # print(stop_timer_secs(start))
+    # print(stop_timer_mins(start))
+    print(stop_timer(start))
