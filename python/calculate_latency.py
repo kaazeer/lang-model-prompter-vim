@@ -30,3 +30,21 @@ def stop_timer_secs(start_time):
     stop_time = datetime.datetime.now()
     delta = stop_time - start_time
     duration_secs = int(delta.total_seconds())
+    return duration_secs
+
+
+def stop_timer_mins(start_time):
+    ''' calculate elapsed time in minutes:seconds '''
+
+    return duration_min_sec(stop_timer_secs(start_time))
+
+
+def stop_timer(start_time):
+    ''' calculate elapsed time in seconds (milliseconds '''
+
+    stop_time = datetime.datetime.now()
+    delta = stop_time - start_time
+    milliseconds = int(delta.total_seconds() * 1000)
+    seconds = round(milliseconds / 1000, 1)
+
+    return f"{milliseconds }ms ({seconds}s)", milliseconds
