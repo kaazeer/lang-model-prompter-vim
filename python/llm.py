@@ -27,3 +27,20 @@ def generate(
     model: str = MODEL,
     temperature: float = TEMPERATURE,
     max_tokens: int = MAX_TOKENS,
+    stop: [str] = STOP
+) -> Tuple[str, str]:
+    ''' invoke the LLM provider model text completion '''
+
+    start_time = calculate_latency.start_timer()
+
+    response = text_completion(model=model, prompt=prompt, temperature=float(temperature), max_tokens=int(max_tokens), stop=stop)
+
+    latency_str, latency_msecs = calculate_latency.stop_timer(start_time)
+
+    # debug
+    # print(response)
+
+    completion_text = response['choices'][0]['text']
+
+    # sometime text-da-vinci-003 insert newlines
+    completion_text = completion_text.strip()
