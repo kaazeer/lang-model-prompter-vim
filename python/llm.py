@@ -44,3 +44,23 @@ def generate(
 
     # sometime text-da-vinci-003 insert newlines
     completion_text = completion_text.strip()
+
+    finish_reason = response['choices'][0]['finish_reason']
+
+    completion_report = utils.completion_statistics(latency_str, latency_msecs, response['usage'], completion_text, finish_reason)
+
+    return (completion_text, completion_report)
+
+
+if __name__ == '__main__':
+
+    print(utils.model_settings(MODEL, TEMPERATURE, MAX_TOKENS, STOP))
+
+    prompt = 'La città soprannominata "la superba", in una parola, è'
+
+    completion, report = generate(prompt=prompt)
+
+    print('' + prompt)
+    print('' + completion)
+    print('' + report)
+    print()
