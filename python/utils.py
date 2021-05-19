@@ -2,4 +2,4 @@
 
 PLUGIN_NAME = 'prompter.vim'
 AUTHOR = 'giorgio.robino@gmail.com'
-VER
+VERSION = '0.2 (Novembe
