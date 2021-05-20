@@ -2,4 +2,7 @@
 
 PLUGIN_NAME = 'prompter.vim'
 AUTHOR = 'giorgio.robino@gmail.com'
-VERSION = '0.2 (Novembe
+VERSION = '0.2 (November 28, 2023)'
+
+
+def v
