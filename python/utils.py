@@ -6,4 +6,4 @@ VERSION = '0.2 (November 28, 2023)'
 
 
 def version():
-    return f'{PLUGIN_N
+    return f'{PLUGIN_NAME}, by {AUTHOR}, vers
