@@ -5,4 +5,5 @@ AUTHOR = 'giorgio.robino@gmail.com'
 VERSION = '0.2 (November 28, 2023)'
 
 
-def v
+def version():
+    r
