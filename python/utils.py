@@ -9,3 +9,5 @@ def version():
     return f'{PLUGIN_NAME}, by {AUTHOR}, version {VERSION}'
 
 
+def help():
+    return '\n'
