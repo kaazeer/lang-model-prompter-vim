@@ -10,4 +10,5 @@ def version():
 
 
 def help():
-    return '\n'
+    return '\n'.join([
+        'Versi
