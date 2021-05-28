@@ -15,4 +15,5 @@ def help():
         version(),
         # '',
         # 'Commands:',
-        # 'PrompterSetup    - read
+        # 'PrompterSetup    - read OS environment variables',
+       
