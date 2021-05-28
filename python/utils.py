@@ -15,4 +15,4 @@ def help():
         version(),
         # '',
         # 'Commands:',
-        #
+        # 'PrompterSetup    - read
