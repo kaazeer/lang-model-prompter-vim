@@ -16,4 +16,4 @@ def help():
         # '',
         # 'Commands:',
         # 'PrompterSetup    - read OS environment variables',
-        # 'PrompterGenerate -
+        # 'PrompterGenerate - trigger the 
