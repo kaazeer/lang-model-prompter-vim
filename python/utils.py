@@ -17,4 +17,5 @@ def help():
         # 'Commands:',
         # 'PrompterSetup    - read OS environment variables',
         # 'PrompterGenerate - trigger the prompt completion',
-        # 'PrompterInfo     - some informations (version, commands
+        # 'PrompterInfo     - some informations (version, commands, current model)',
+     
