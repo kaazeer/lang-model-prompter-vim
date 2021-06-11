@@ -20,3 +20,6 @@ def help():
         # 'PrompterInfo     - some informations (version, commands, current model)',
         # 'prompterModel   - show model attributes'
     ])
+
+
+def model_se
