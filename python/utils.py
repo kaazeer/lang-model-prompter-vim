@@ -22,4 +22,5 @@ def help():
     ])
 
 
-def model_se
+def model_settings(
+    m
