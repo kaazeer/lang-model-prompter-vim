@@ -23,4 +23,5 @@ def help():
 
 
 def model_settings(
-    m
+    model: str,
+    temperatur
