@@ -24,4 +24,5 @@ def help():
 
 def model_settings(
     model: str,
-    temperatur
+    temperature: float,
+    max_tokens: 
