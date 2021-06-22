@@ -27,3 +27,5 @@ def model_settings(
     temperature: float,
     max_tokens: int,
     stop: [str],
+) -> str:
+    ''' print the 
