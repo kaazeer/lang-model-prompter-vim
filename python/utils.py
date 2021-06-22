@@ -28,4 +28,4 @@ def model_settings(
     max_tokens: int,
     stop: [str],
 ) -> str:
-    ''' print the 
+    ''' print the model configuration paramet
