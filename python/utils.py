@@ -30,4 +30,5 @@ def model_settings(
 ) -> str:
     ''' print the model configuration parameters, in one line '''
 
-    info_text
+    info_text = (
+        f'Model: {model} '
