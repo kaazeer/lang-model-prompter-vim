@@ -32,3 +32,4 @@ def model_settings(
 
     info_text = (
         f'Model: {model} '
+        f'Tempera
