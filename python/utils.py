@@ -32,4 +32,4 @@ def model_settings(
 
     info_text = (
         f'Model: {model} '
-        f'Temperature: {temperature} Ma
+        f'Temperature: {temperature} Max_tokens: {max_tokens}'
