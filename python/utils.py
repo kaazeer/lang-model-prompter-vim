@@ -37,4 +37,7 @@ def model_settings(
     if stop:
         info_text += f' Stop: {stop}'
 
-    r
+    return info_text
+
+
+def 
