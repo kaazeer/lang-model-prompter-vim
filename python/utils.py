@@ -40,4 +40,4 @@ def model_settings(
     return info_text
 
 
-def 
+def throughput(tokens: i
