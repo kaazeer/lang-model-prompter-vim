@@ -35,4 +35,6 @@ def model_settings(
         f'Temperature: {temperature} Max_tokens: {max_tokens}'
     )
     if stop:
-        info_text +
+        info_text += f' Stop: {stop}'
+
+    r
