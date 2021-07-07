@@ -40,4 +40,4 @@ def model_settings(
     return info_text
 
 
-def throughput(tokens: i
+def throughput(tokens: int, latency_msecs
