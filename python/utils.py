@@ -42,3 +42,5 @@ def model_settings(
 
 def throughput(tokens: int, latency_msecs: int) -> int:
     ''' tokens/latency ratio where latency is measured in seconds '''
+
+    latency_secs = la
