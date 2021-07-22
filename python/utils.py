@@ -44,4 +44,6 @@ def throughput(tokens: int, latency_msecs: int) -> int:
     ''' tokens/latency ratio where latency is measured in seconds '''
 
     latency_secs = latency_msecs / 1000
-    v = tokens
+    v = tokens / latency_secs
+
+  
