@@ -54,4 +54,5 @@ def completion_statistics(
     latency_str: str,
     latency_msecs: int,
     usage: str,
-    compl
+    completion_text: str,
+    fi
