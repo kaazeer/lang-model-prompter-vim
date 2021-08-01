@@ -46,4 +46,5 @@ def throughput(tokens: int, latency_msecs: int) -> int:
     latency_secs = latency_msecs / 1000
     v = tokens / latency_secs
 
-    # round the ration to an inte
+    # round the ration to an integer
+    return round(v
