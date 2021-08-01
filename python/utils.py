@@ -56,3 +56,5 @@ def completion_statistics(
     usage: str,
     completion_text: str,
     finish_reason: str,
+) -> str:
+    ''' pr
