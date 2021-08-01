@@ -50,4 +50,6 @@ def throughput(tokens: int, latency_msecs: int) -> int:
     return round(v)
 
 
-def completion_statisti
+def completion_statistics(
+    latency_str: str,
+  
