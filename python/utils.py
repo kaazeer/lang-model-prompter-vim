@@ -57,4 +57,4 @@ def completion_statistics(
     completion_text: str,
     finish_reason: str,
 ) -> str:
-    ''' pr
+    ''' print a statistics dat
