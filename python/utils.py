@@ -52,4 +52,5 @@ def throughput(tokens: int, latency_msecs: int) -> int:
 
 def completion_statistics(
     latency_str: str,
-  
+    latency_msecs: int,
+    u
