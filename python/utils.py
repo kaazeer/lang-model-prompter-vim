@@ -57,4 +57,6 @@ def completion_statistics(
     completion_text: str,
     finish_reason: str,
 ) -> str:
-    ''' print a statistics data report including: latency times, tokens consumption, words and chars c
+    ''' print a statistics data report including: latency times, tokens consumption, words and chars counts '''
+
+    comple
