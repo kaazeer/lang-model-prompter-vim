@@ -59,4 +59,4 @@ def completion_statistics(
 ) -> str:
     ''' print a statistics data report including: latency times, tokens consumption, words and chars counts '''
 
-    comple
+    completion_token
