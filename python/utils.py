@@ -59,4 +59,5 @@ def completion_statistics(
 ) -> str:
     ''' print a statistics data report including: latency times, tokens consumption, words and chars counts '''
 
-    completion_tokens = usage['completi
+    completion_tokens = usage['completion_tokens']
+    prompt_tok
