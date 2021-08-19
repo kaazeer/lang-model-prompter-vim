@@ -61,4 +61,6 @@ def completion_statistics(
 
     completion_tokens = usage['completion_tokens']
     prompt_tokens = usage['prompt_tokens']
-    total_tokens = usage
+    total_tokens = usage['total_tokens']
+
+    toke
