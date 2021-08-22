@@ -65,4 +65,6 @@ def completion_statistics(
 
     tokens_report = f'{total_tokens} (prompt: {prompt_tokens} completion: {completion_tokens})'
 
-    nchars = len(comple
+    nchars = len(completion_text)
+
+    # 
