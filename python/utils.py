@@ -67,4 +67,4 @@ def completion_statistics(
 
     nchars = len(completion_text)
 
-    # 
+    # rough calculation c
