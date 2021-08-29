@@ -68,4 +68,4 @@ def completion_statistics(
     nchars = len(completion_text)
 
     # rough calculation considering a blank separated words
-    n
+    nwords = len(completi
