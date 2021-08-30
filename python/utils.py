@@ -70,4 +70,4 @@ def completion_statistics(
     # rough calculation considering a blank separated words
     nwords = len(completion_text.split())
 
-    nlines = len(completi
+    nlines = len(completion_text.splitlin
