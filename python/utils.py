@@ -72,4 +72,6 @@ def completion_statistics(
 
     nlines = len(completion_text.splitlines())
 
-    text_statistics = f'Words: {nwords}
+    text_statistics = f'Words: {nwords} Chars: {nchars}'
+
+ 
