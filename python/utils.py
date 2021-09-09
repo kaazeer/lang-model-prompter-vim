@@ -74,4 +74,5 @@ def completion_statistics(
 
     text_statistics = f'Words: {nwords} Chars: {nchars}'
 
-    # don't print  number of lines if the completion is just a sin
+    # don't print  number of lines if the completion is just a single line
+    if nlines > 1:
