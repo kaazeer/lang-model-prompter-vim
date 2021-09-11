@@ -76,4 +76,5 @@ def completion_statistics(
 
     # don't print  number of lines if the completion is just a single line
     if nlines > 1:
-        nlines_statistics = f', Lines: {
+        nlines_statistics = f', Lines: {nlines}'
+        text_
