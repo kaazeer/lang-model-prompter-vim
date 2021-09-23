@@ -79,4 +79,6 @@ def completion_statistics(
         nlines_statistics = f', Lines: {nlines}'
         text_statistics += nlines_statistics
 
-    t = throughput(total_tokens
+    t = throughput(total_tokens, latency_msecs)
+
+   
