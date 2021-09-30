@@ -81,4 +81,4 @@ def completion_statistics(
 
     t = throughput(total_tokens, latency_msecs)
 
-    single_line_to_print = f'Latency: {latency_str} Tokens: {tokens_report} Throug
+    single_line_to_print = f'Latency: {latency_str} Tokens: {tokens_report} Throughput: {t} {text_statis
