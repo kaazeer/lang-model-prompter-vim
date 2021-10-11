@@ -84,4 +84,4 @@ def completion_statistics(
     single_line_to_print = f'Latency: {latency_str} Tokens: {tokens_report} Throughput: {t} {text_statistics}'
 
     # don't print finish reason if the completion finished normally
-    if f
+    if finish_reason != 'stop':
