@@ -86,4 +86,6 @@ def completion_statistics(
     # don't print finish reason if the completion finished normally
     if finish_reason != 'stop':
         output_finish_reason = f', Finish reason: {finish_reason}'
-        single_line_to_print += output_finish_rea
+        single_line_to_print += output_finish_reason
+
+    return single_line_to_p
