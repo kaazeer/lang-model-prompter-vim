@@ -88,4 +88,7 @@ def completion_statistics(
         output_finish_reason = f', Finish reason: {finish_reason}'
         single_line_to_print += output_finish_reason
 
-    return single_line_to_p
+    return single_line_to_print
+
+
+if __name__ == '__main
