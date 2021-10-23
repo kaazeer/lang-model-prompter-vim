@@ -91,4 +91,5 @@ def completion_statistics(
     return single_line_to_print
 
 
-if __name__ == '__main
+if __name__ == '__main__':
+    print(hel
