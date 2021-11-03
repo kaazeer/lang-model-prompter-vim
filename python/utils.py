@@ -92,4 +92,5 @@ def completion_statistics(
 
 
 if __name__ == '__main__':
-    print(hel
+    print(help())
+    print()
