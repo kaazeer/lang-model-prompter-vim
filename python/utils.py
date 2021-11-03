@@ -96,4 +96,4 @@ if __name__ == '__main__':
     print()
 
     usage = {
-        'co
+        'completion_tokens': 30
