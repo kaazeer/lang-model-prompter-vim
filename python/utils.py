@@ -98,4 +98,6 @@ if __name__ == '__main__':
     usage = {
         'completion_tokens': 30,
         'prompt_tokens': 10,
-        
+        'total_tokens': 20
+    }
+ 
