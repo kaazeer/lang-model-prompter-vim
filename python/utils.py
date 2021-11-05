@@ -96,4 +96,5 @@ if __name__ == '__main__':
     print()
 
     usage = {
-        'completion_tokens': 30
+        'completion_tokens': 30,
+        'prompt_tokens
