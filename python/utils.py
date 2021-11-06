@@ -106,4 +106,5 @@ if __name__ == '__main__':
         usage,
         'tanto va la gatta al lardo, che ci lascia lo zampino',
         'stop',
-  
+    )
+    print(
