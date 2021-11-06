@@ -101,4 +101,6 @@ if __name__ == '__main__':
         'total_tokens': 20
     }
     line = completion_statistics(
-        '12
+        '1200ms (1.2s)',
+        1200,
+ 
