@@ -104,4 +104,4 @@ if __name__ == '__main__':
         '1200ms (1.2s)',
         1200,
         usage,
-        'tanto va la gatta al lardo, che ci 
+        'tanto va la gatta al lardo, che ci lascia lo zampin
