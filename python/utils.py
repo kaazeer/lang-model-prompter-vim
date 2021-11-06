@@ -103,4 +103,5 @@ if __name__ == '__main__':
     line = completion_statistics(
         '1200ms (1.2s)',
         1200,
- 
+        usage,
+        '
