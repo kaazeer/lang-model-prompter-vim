@@ -100,4 +100,5 @@ if __name__ == '__main__':
         'prompt_tokens': 10,
         'total_tokens': 20
     }
-    line = completi
+    line = completion_statistics(
+        '12
