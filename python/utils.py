@@ -107,4 +107,5 @@ if __name__ == '__main__':
         'tanto va la gatta al lardo, che ci lascia lo zampino',
         'stop',
     )
-    print('completion_stat
+    print('completion_statistics')
+    print
