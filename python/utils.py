@@ -108,4 +108,7 @@ if __name__ == '__main__':
         'stop',
     )
     print('completion_statistics')
-    print
+    print(line)
+    print()
+
+ 
