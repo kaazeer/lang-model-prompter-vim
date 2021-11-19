@@ -111,4 +111,5 @@ if __name__ == '__main__':
     print(line)
     print()
 
-    line = model_set
+    line = model_settings(
+        'azure/text-d
