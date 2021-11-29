@@ -118,4 +118,6 @@ if __name__ == '__main__':
         "a: u:"
     )
     print('model_settings')
-    pri
+    print(line)
+    print()
+
