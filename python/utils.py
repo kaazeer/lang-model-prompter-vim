@@ -117,4 +117,5 @@ if __name__ == '__main__':
         2048,
         "a: u:"
     )
-    print('m
+    print('model_settings')
+    pri
