@@ -123,4 +123,6 @@ if __name__ == '__main__':
 
     line = model_settings(
         'azure/text-davinci-003',
-       
+        0.4,
+        2048,
+      
