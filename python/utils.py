@@ -122,4 +122,5 @@ if __name__ == '__main__':
     print()
 
     line = model_settings(
-        'azure/te
+        'azure/text-davinci-003',
+       
