@@ -127,4 +127,5 @@ if __name__ == '__main__':
         2048,
         None
     )
-    print('mo
+    print('model_settings')
+    pr
