@@ -128,4 +128,7 @@ if __name__ == '__main__':
         None
     )
     print('model_settings')
-    pr
+    print(line)
+    print()
+
+    print(
