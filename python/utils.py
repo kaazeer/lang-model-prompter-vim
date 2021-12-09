@@ -132,4 +132,4 @@ if __name__ == '__main__':
     print()
 
     print('Speed')
-    print(throughput(150, 35
+    print(throughput(150, 354))
