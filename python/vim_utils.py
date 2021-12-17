@@ -1,1 +1,1 @@
-# python utility fun
+# python utility functions that use the vim modul
