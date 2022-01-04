@@ -2,4 +2,5 @@
 import vim
 
 
-def echo(t
+def echo(text):
+    ''' standard (m
