@@ -3,4 +3,4 @@ import vim
 
 
 def echo(text):
-    ''' standard (m
+    ''' standard (multi lines) print in the 
