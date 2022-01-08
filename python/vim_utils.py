@@ -4,3 +4,4 @@ import vim
 
 def echo(text):
     ''' standard (multi lines) print in the command-line area '''
+    vim.command(f'echo "{tex
