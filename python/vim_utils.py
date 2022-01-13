@@ -7,4 +7,5 @@ def echo(text):
     vim.command(f'echo "{text}"')
 
 
-def info(text)
+def info(text):
+    ''' print a single 
