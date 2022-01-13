@@ -8,4 +8,5 @@ def echo(text):
 
 
 def info(text):
-    ''' print a single 
+    ''' print a single line and redraw
+      
