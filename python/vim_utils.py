@@ -9,4 +9,4 @@ def echo(text):
 
 def info(text):
     ''' print a single line and redraw
-        Useful when you want
+        Useful when you want to display 
