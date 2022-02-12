@@ -10,4 +10,4 @@ def echo(text):
 def info(text):
     ''' print a single line and redraw
         Useful when you want to display dynamic progress or status updates
-        without
+        without creating new lines in t
