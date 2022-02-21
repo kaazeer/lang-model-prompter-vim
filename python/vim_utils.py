@@ -12,4 +12,4 @@ def info(text):
         Useful when you want to display dynamic progress or status updates
         without creating new lines in the command-line area.
     '''
-    vim.comm
+    vim.command(f'echomsg "{text}"'
