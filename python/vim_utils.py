@@ -15,4 +15,5 @@ def info(text):
     vim.command(f'echomsg "{text}"')
 
 
-def progress
+def progress(text):
+ 
