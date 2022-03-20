@@ -16,4 +16,5 @@ def info(text):
 
 
 def progress(text):
-    ''' print a singl
+    ''' print a single line and redraw
+     
