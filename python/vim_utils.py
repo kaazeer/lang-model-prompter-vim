@@ -17,4 +17,4 @@ def info(text):
 
 def progress(text):
     ''' print a single line and redraw
-        This technique 
+        This technique can be particularly
