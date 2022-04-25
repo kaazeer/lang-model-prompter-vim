@@ -17,4 +17,5 @@ def info(text):
 
 def progress(text):
     ''' print a single line and redraw
-        This technique can be particularly useful when you want to display dynamic progress or status updat
+        This technique can be particularly useful when you want to display dynamic progress or status updates
+        without creat
