@@ -18,4 +18,6 @@ def info(text):
 def progress(text):
     ''' print a single line and redraw
         This technique can be particularly useful when you want to display dynamic progress or status updates
-        without creating new lines in the command
+        without creating new lines in the command-line area.
+    '''
+    vim.
