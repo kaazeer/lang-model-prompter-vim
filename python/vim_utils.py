@@ -21,3 +21,7 @@ def progress(text):
         without creating new lines in the command-line area.
     '''
     vim.command(f'echo "{text}" | redraw')
+
+
+def error(text):
+    vi
