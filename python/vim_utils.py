@@ -20,4 +20,4 @@ def progress(text):
         This technique can be particularly useful when you want to display dynamic progress or status updates
         without creating new lines in the command-line area.
     '''
-    vim.command(f'echo "{te
+    vim.command(f'echo "{text}" | redraw')
