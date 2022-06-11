@@ -24,4 +24,4 @@ def progress(text):
 
 
 def error(text):
-    vim.command(f'echohl Erro
+    vim.command(f'echohl ErrorMsg | echomsg "{text}" | echohl N
