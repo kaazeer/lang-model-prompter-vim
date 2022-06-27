@@ -1,1 +1,1 @@
-# Lang-Model-Prompter-vim\n\nUse Vim a
+# Lang-Model-Prompter-vim\n\nUse Vim as a powerful tool f
